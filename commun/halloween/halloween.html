@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Carte Interactive</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="haut">
+    <p align="center"><img src="../image_halow/halloween.png"></p>
+  </div>
+
+  <ul>
+    <li><a href="halloween.html"><img src="../halloween_logo.png"></a></li>
+    <li><a href="festive.html"><img src="../festif_logo.png"></a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn"><img src="../tuto_logo.png"></a>
+      <div class="dropdown-content">
+        <a href="tu12.html">TU12</a>
+        <a href="tu14.html">TU14</a>
+      </div>
+  </ul>
+
+  <div class="app">
+    
+    <!-- =========================
+         CARTE
+    ========================== -->
+    <div class="map-container">
+
+      <div class="map" id="map">
+
+        <!-- IMAGE DE FOND -->
+        <img src="../image_halow/carte.png" class="map-image">
+        <!-- =========================
+             MARQUEURS
+        ========================== -->
+        <img class="marker"
+             src="../ping_zone.png"
+             style="left:312px; top:240px;"
+             data-title="Pyramide"
+             data-image="../image_halow\pyramide.png"
+             data-description="Une grande pyramide/sphinx qui se compose d'un labyrinthe avec en récompense un disque de musique.">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:788px; top:205px;"
+             data-title="Cactus geant"
+             data-image="../image_halow\cactus_geant.png"
+             data-description="un desert dans lequel se trouve trois cactus geant avec une ligne de minecart sortant de l'un d'entre eux">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:980px; top:150px;"
+             data-title="Maison de sorciere"
+             data-image="../image_halow\maison_sorciere.png"
+             data-description="Une grande hutte de sorciere dans laquelle on trouve des villageois en cage ainsi qu'une table d'enchantement">
+        
+        <img class="marker"
+             src="../ping.png"
+             style="left:1320px; top:230px;"
+             data-title="Deuxieme gare"
+             data-image="../image_halow\gare2.png"
+             data-description="Le deuxieme gare du train fantome qui permet un acces vers l'exterieur, mis a part un escalier qui mene vers le train, cette gare est principalement vide">
+
+        <img class="marker"
+             src="../ping_random.png"
+             style="left:1460px; top:230px;"
+             data-title="Cimetiere detruit"
+             data-image="../image_halow\cimeterre_effondre.png"
+             data-description="un petit cimetiere sans interet qui est en partie detruit a cause d'une faille qui s'etend jusqu'a l'ocean">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:1710px; top:240px;"
+             data-title="Cimetiere en bois"
+             data-image="../image_halow\cimeterrebois.png"
+             data-description="un cimetiere de taille moyenne fait entierement de bois dans lequel on trouve une maison ainsi que differentes racines d'arbres sortant du sol ">
+
+        <img class="marker"
+             src="../ping_random.png"
+             style="left:1285px; top:305px;"
+             data-title="Cimetiere de la gare"
+             data-image="../image_halow\cimetiere_gare2.png"
+             data-description="un petit cimetiere construit juste a cote de la deuxieme gare">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:1040px; top:520px;"
+             data-title="Vache geante"
+             data-image="../image_halow\vache.png"
+             data-description="Une vache geante avec a ses pieds un lac de lave ">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:325px; top:470px;"
+             data-title="Mouton geant"
+             data-image="../image_halow\mouton.png"
+             data-description="Un mouton geant">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:290px; top:145px;"
+             data-title="Petites statues"
+             data-image="../image_halow\3statues.png"
+             data-description="Une ligne de 3 petites statues situe jusqte derriere la pyramide principale">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:233px; top:200px;"
+             data-title="Petite pyramide"
+             data-image="../image_halow\pyramide_petite.png"
+             data-description="Une petite pyramide en ruine situe a gauche de la pyramide principale">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:250px; top:275px;"
+             data-title="Bras de zombie"
+             data-image="../image_halow\bras.png"
+             data-description="Un bras de zombie momifie sortant du sol">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:390px; top:250px;"
+             data-title="Oasis"
+             data-image="../image_halow\oasis.png"
+             data-description="Une oasis hante avec de l'eau provenant d'une etrange dune de sable avec des yeux, le fond de l'eau est d'ailleur compose de sable des ames">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:510px; top:210px;"
+             data-title="Bras de zombie"
+             data-image="../image_halow\bras2.png"
+             data-description="Un autre bras de zombie momifie sortant du sol">
+
+        <img class="marker"
+             src="../ping_random.png"
+             style="left:970px; top:615px;"
+             data-title="Puit d'ames"
+             data-image="../image_halow\puis_ame.png"
+             data-description="Un petit puit menant a un lac de lave duquel sort des fantome">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:1757px; top:605px;"
+             data-title="Bouche de monstre"
+             data-image="../image_halow\bouche.png"
+             data-description="Une immense bouche de monstre sortant du sol qui n'attend que de manger les wagons du train fantome qui passe par la">
+
+        <img class="marker"
+             src="../ping_random.png"
+             style="left:1527px; top:505px;"
+             data-title="Monstre de la montagne"
+             data-image="../image_halow\monstre_montagne.png"
+             data-description="Une etrange creature qui, grace a d'immense main, essaye de s'extirper de la montagne">
+
+        <img class="marker"
+             src="../ping_random.png"
+             style="left:1540px; top:535px;"
+             data-title="Pousse d'acacia"
+             data-image="../image_halow\petit_acacia.png"
+             data-description="Une petite pousse d'acacia poussant a cote du manoir">
+
+        <img class="marker"
+             src="../ping_zone.png"
+             style="left:1260px; top:560px;"
+             data-title="Manoir"
+             data-image="../image_halow\manoir.png"
+             data-description="Un immense manoir possedant plus de 40 pieces, 4 etages, et un sous sol. C'est le plus grand batiment de la carte et un des rares dans lequel ont peux trouver un villageois a l'interieur">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:1355px; top:523px;"
+             data-title="Observatoire"
+             data-image="../image_halow\observatoire.png"
+             data-description="Un observatoire situe tout en haut du manoir. On trouve a l'interieur un grand telescope ainsi qu'une maquette du systeme solaire">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:1335px; top:555px;"
+             data-title="Salle du piano"
+             data-image="../image_halow\piano.png"
+             data-description="Un immense piano se trouvant au premier etage sur lequel on peux jouer grace a des plaques de pressions situe juste devant">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:1370px; top:600px;"
+             data-title="Boucher"
+             data-image="../image_halow\boucher.png"
+             data-description="Le seul resident du manoir, un villageois avec a ses cotes deux cervelles suspendus">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:1300px; top:570px;"
+             data-title="Catacomble du manoir"
+             data-image="../image_halow\catacomble_manoir.png"
+             data-description="Grace a un levier activable au sous-sol, on peux acceder aux catacombles du manoir qui renferme un disque de musique">
+
+        <img class="marker"
+             src="../ping_random.png"
+             style="left:818px; top:680px;"
+             data-title="Cimetiere des neiges"
+             data-image="../image_halow\cimetiere_neige.png"
+             data-description="Un petit cimetiere batis dans la neige">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:647px; top:720px;"
+             data-title="Yeti"
+             data-image="../image_halow\yeti.png"
+             data-description="Un grand yeti tenant dans une main un arbre arrache et sous lequel passe le train fantome">
+
+        <img class="marker"
+             src="../ping_random.png"
+             style="left:990px; top:820px;"
+             data-title="Cimetiere de la montagne"
+             data-image="../image_halow\cimetiere_minuscule.png"
+             data-description="Un minuscule cimetiere compose de 3 tombes construit en haut d'une montagne">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:753px; top:880px;"
+             data-title="Bonhomme de neige"
+             data-image="../image_halow\bonhomme.png"
+             data-description="Un immense bonhomme de neige avec une tete compose d'une citrouille qui ne semble pas tres amical">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:303px; top:825px;"
+             data-title="Cabanon abandonne"
+             data-image="../image_halow\cabine.png"
+             data-description="Un petit cabanon en ruine et a moitie engloutis par la neige et dans lequel on peut trouver un coffre">
+
+        <img class="marker"
+             src="../ping_random.png"
+             style="left:150px; top:810px;"
+             data-title="Cimetiere souterrain"
+             data-image="../image_halow\cimetiere_enterre.png"
+             data-description="Un petit cimetiere a motie enterre sous une colline">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:1757px; top:840px;"
+             data-title="Zombies géants"
+             data-image="../image_halow\zombie_geant.png"
+             data-description="Deux grandes statues de zombie sur lesquelles le train fantome passe">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:1520px; top:895px;"
+             data-title="Cranes en pierre"
+             data-image="../image_halow\crane_montagne.png"
+             data-description="Plusieurs cranes graves dans la roche avec des yeux et bouches en flamme">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:1670px; top:1050px;"
+             data-title="Foret fantomatique"
+             data-image="../image_halow\foret_fantome.png"
+             data-description="Une foret au dessus de laquelle flote de nombreux fantomes et dans laquelle on peut trouver des parties de rail abandonnes">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:1653px; top:1155px;"
+             data-title="Cochon geant"
+             data-image="../image_halow\cochon.png"
+             data-description="Une grande statue de cochon">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:1229px; top:1225px;"
+             data-title="Creeper a tentacules"
+             data-image="../image_halow\creeper.png"
+             data-description="Un creeper geant squelettique qui possede plusieurs tentacule qui'il utilise afin d'attraper les rail du train fantome">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:1175px; top:1000px;"
+             data-title="Monstre marin"
+             data-image="../image_halow\monstre_marin.png"
+             data-description="Une etrange creature vivant au fond d'un lac et possedant des tentacules avec des yeux">
+
+        <img class="marker"
+             src="../ping_zone.png"
+             style="left:855px; top:1065px;"
+             data-title="Village du spawn"
+             data-image="../image_halow\village_spawn.png"
+             data-description="Le village centrale de cette carte dans lequel le joueur spawn lorsqu'il lance la carte, remplis de decorations d'halloween et de maisons entierement decorees, il est aussi le point de depart du train fantome qui fait le tour de la carte">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:715px; top:1065px;"
+             data-title="Train fantome"
+             data-image="../image_halow\train.png"
+             data-description="Facilement reconnaissable grace a son immense tête de clown, le train fantome fait le tour de la carte et vous permet de decouvrir la plupart des construction que possede ce monde">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:980px; top:1076px;"
+             data-title="Spawn"
+             data-image="../image_halow\maison_spawn.png"
+             data-description="Le point d'apparition du joueur dans cette carte.C'est une petite maison dans laquelle on peut acceder a un sous-sol en activant un levier cache derrière la cheminee">
+
+         <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:790px; top:1195px;"
+             data-title="Grande roue"
+             data-image="../image_halow\grande_roue.png"
+             data-description="Une grande roue suffisament cool pour que je la mette ici par contre elle n'est malheureusement pas fonctionnel">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:315px; top:1220px;"
+             data-title="Monstre soutterain"
+             data-image="../image_halow\monstre_soutterain.png"
+             data-description="Une immense creature ayant pris le controle entier d'une grotte, elle se compose d'immense yeux, de tentacules, et d'une machoire faisant la taille de la grotte">
+
+        <img class="marker"
+             src="../ping_random.png"
+             style="left:156px; top:1357px;"
+             data-title="Cimetiere"
+             data-image="../image_halow\cimetiere_manoir.png"
+             data-description="Un petit cimetiere cache derriere le manoir...">
+
+        <img class="marker"
+             src="../ping_random.png"
+             style="left:1760px; top:1275px;"
+             data-title="Village"
+             data-image="../image_halow\village_vanilla.png"
+             data-description="Un village normale qui s'est perdu dans ce monde">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:1755px; top:1520px;"
+             data-title="Champ"
+             data-image="../image_halow\champ_ble.png"
+             data-description="Un grand champ de ble servant a nourrir le village">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:1555px; top:1600px;"
+             data-title="Eglise"
+             data-image="../image_halow\eglise.png"
+             data-description="Le plus grand batiment du village dans lequel on peut trouver un orgue, un autel, de l'eau benite ainsi qu'un petit cimetiere">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:1553px; top:1693px;"
+             data-title="Moulin"
+             data-image="../image_halow\moulin.png"
+             data-description="Un grand moulin permettant probablement de moudre le ble produit par le champ">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:1684px; top:1780px;"
+             data-title="Port"
+             data-image="../image_halow\port.png"
+             data-description="Un petit port dans lequel on peut trouver dans un coffre des bateaux (hasard de dingue)">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:1500px; top:1370px;"
+             data-title="Champ de citrouille"
+             data-image="../image_halow\champ_citrouille.png"
+             data-description="Un grand champ de citrouille qui semble est devenu hors de controle, les citrouilles ayant casse plusieurs morceaux de la cloture">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:1505px; top:1640px;"
+             data-title="Cimetiere"
+             data-image="../image_halow\cimetiere_village.png"
+             data-description="Un petit cimetiere dans lequel se cache un levier qui permet d'ouvrir l'acces vers le laboratoire secret">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:1501px; top:1495px;"
+             data-title="Laboratoire secret"
+             data-image="../image_halow\labo.png"
+             data-description="Un grand laboratoire construit en secret sous le village dans lequel une personne fait des experiences sur de pauvres villageois afin de les transformer en monstre">
+
+        <img class="marker"
+             src="../ping_zone.png"
+             style="left:1555px; top:1510px;"
+             data-title="Grand village"
+             data-image="../image_halow\grand_village.png"
+             data-description="Un immense village (on pourrais meme peut etre parler de ville) accessible via la premiere gare dans lequel on trouvera de nombreux batiment: bibliotheque, maison, entrepot de ble, place de marche, petit etang et beaucoup d'autres...">
+
+        <img class="marker"
+             src="../ping_zone.png"
+             style="left:417px; top:1422px;"
+             data-title="Manoir"
+             data-image="../image_halow\manoir_foret.png"
+             data-description="cache au fond de la foret se cache un immense manoir dans lequel vous devrez, en resolvant des enigmes, ouvrir l'acces a une petite mausolee afin d'acceder a un coffre qui contient un disque de musique">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:365px; top:1482px;"
+             data-title="Salle du puzzle"
+             data-image="../image_halow\puzzle.png"
+             data-description="Dans l'aile gauche du manoir se trouve une salle contenant des leviers dans laquelle vous devrez resoudre un puzzle qui vous permettra l'acces a un des deux leviers necessaire afin d'ouvrir la mausolee">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:365px; top:1362px;"
+             data-title="Aile abandonnee"
+             data-image="../image_halow\aile_abandonne.png"
+             data-description="L'aile droite du manoir est en partie abandonnee ce qui ne l'empeche pas de cacher un des deux levier permettant d'ouvrir la mausolee">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:307px; top:1422px;"
+             data-title="Mausolee"
+             data-image="../image_halow\mausolee.png"
+             data-description="Petite mausolee qu'il vous faudra ouvrir grace a deux leviers qui cache un labyrinthe avec comme recompense un disque de musique">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:570px; top:1650px;"
+             data-title="Foret hantee"
+             data-image="../image_halow\foret_hante.png"
+             data-description="Une petite cabane dans la foret marquera votre entree dans une partie bien plus sombre de la foret, une partie dans laquelle vous ne verez plus la lumière du jour et dans laquelle d'etrange esprit semble se promener">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:422px; top:1805px;"
+             data-title="Acacia geant"
+             data-image="../image_halow\acacia_geant.png"
+             data-description="Au plus profond de la foret se trouve un immense acacia a tete de creeper dans lequel on peut trouver un portail vers le nether... Cet acacia semble avoir pris le controle de la foret entiere via ses racines en forme de mains que l'on peut apercevoir a travers toute la foret">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:745px; top:1820px;"
+             data-title="Champignons geants"
+             data-image="../image_halow\champignon.png"
+             data-description="Sur une petite ile champignon se trouve 3 grand champignon avec des visages qui ne semble pas etre tres amical">
+
+        <img class="marker"
+             src="../ping.png"
+             style="left:1188px; top:1630px;"
+             data-title="Premiere gare"
+             data-image="../image_halow\gare1.png"
+             data-description="Perchee en haut d'une colline se trouve la premiere gare du train fantome qui est une maison en ruine semblant tenir en equilibre precaire">
+
+        <img class="marker"
+             src="../ping_zone.png"
+             style="left:980px; top:1500px;"
+             data-title="Grand cimetiere"
+             data-image="../image_halow\grand_cimetiere.png"
+             data-description="Un immense cimetiere compose de multiple mausolee, statues, et tombes sous lequel se trouve le portail vers l'end">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:880px; top:1380px;"
+             data-title="Grande mausolee"
+             data-image="../image_halow\grande_mausolee.png"
+             data-description="Une mausolee posee au millieu de l'eau dans laquelle ont trouve un acces vers le portail de l'end">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:988px; top:1595px;"
+             data-title="Grande mausolee"
+             data-image="../image_halow\grande_mausolee.png"
+             data-description="Une mausolee posee au millieu de l'eau dans laquelle ont trouve un acces vers le portail de l'end">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:1005px; top:1763px;"
+             data-title="Grandes tombes"
+             data-image="../image_halow\tombe_geante.png"
+             data-description="Plusieurs tombes geantes sont dispersees a travers le cimetiere, le train fantome passe meme a travers l'une d'entre elles">
+
+        <img class="marker"
+             src="../ping_zone_mineur.png"
+             style="left:1153px; top:1467px;"
+             data-title="Portail de l'Ender"
+             data-image="../image_halow\portail_end.png"
+             data-description="Enfouis profondement sous terre, il vous faudra passer par les mausolees afin d'y acceder">
+
+
+      </div>
+      
+    </div>
+    <!-- =========================
+         PANNEAU DROITE
+    ========================== -->
+    <div class="info-panel">
+      <h1 id="info-title">
+        Sélectionne un lieu
+      </h1>
+      <img id="info-image" src="">
+      <h2 id="info-description">
+        Clique sur un marqueur pour afficher des informations.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="bas">
+    <a href="https://www.youtube.com/@Urbokie"><h2>Cree par Urbokie</h2></a>
+    <a href="https://fr.textstudio.com/">Générateur de polices</a>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
